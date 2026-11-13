@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayout layoutRaiz;
@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private androidx.appcompat.widget.SwitchCompat switchModoNoche;
     private TextView tvTitulo;
 
-    // Referencia al boton de panico del layout
-    private Button btnPanico;
-
+    // TODO RAMA feature/boton-panico: Declarar referencia a btnPanico
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,16 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        // Enlazamos la variable con el boton del layout usando su id
-        btnPanico = findViewById(R.id.btnPanico);
-        // Asignamos la accion que se ejecuta al pulsar el boton
-        btnPanico.setOnClickListener(new View.OnClickListener() {
-            // Metodo que se llama cuando se pulsa el boton
-            @Override
-            public void onClick(View v) {
-                // Mostramos el mensaje de emergencia durante un tiempo largo
-                Toast.makeText(MainActivity.this, R.string.toast_alerta_panico, Toast.LENGTH_LONG).show();
-            }
-        });
+
+        // TODO RAMA feature/boton-panico: Configurar listener del botón de pánico
     }
 }
