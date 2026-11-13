@@ -35,17 +35,20 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_interruptor" />
 
-    <!--
-        TODO RAMA feature/contador-luces:
-        Insertar aquí un TextView con id 'tvContador' para mostrar
-        el total de veces que se ha pulsado el interruptor.
-    -->
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/texto_contador"
+        android:textSize="16sp" />
 
-    <!--
-        TODO RAMA feature/modo-noche:
-        Insertar aquí un Switch con id 'switchModoNoche' para
-        alternar el color de fondo de 'layoutRaiz'.
-    -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchModoNoche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/switch_modo_noche" />
 
     <!--
         TODO RAMA feature/boton-panico:

@@ -4,4 +4,6 @@
     <string name="estado_luz_apagada">Luz: APAGADA</string>
     <string name="estado_luz_encendida">Luz: ENCENDIDA</string>
     <string name="btn_interruptor">INTERRUPTOR</string>
+    <string name="texto_contador">Interruptor accionado: %1$d veces</string>
+    <string name="switch_modo_noche">Activar Modo Noche</string>
 </resources>
